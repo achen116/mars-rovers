@@ -1,0 +1,10 @@
+<div class="filters-container__datepicker">
+	<form #filtersForm="ngForm" (ngSubmit)=onSubmit(filtersForm) novalidate>
+		<div class="form-group">
+			<label for="datepicker">Choose Date</label>
+			<input type="date" class="form-control" id="datepicker" name="date" [(ngModel)]="this.date" required>
+		</div>
+
+		<button type="submit" class="btn btn-primary" [disabled]="!filtersForm.form.valid">Apply</button>
+	</form>
+</div>

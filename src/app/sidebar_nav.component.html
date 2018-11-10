@@ -1,0 +1,36 @@
+<nav class="navbar navbar-default navbar-fixed-left">
+  <div class="container-fluid">
+    <div class="navbar-header sidebar-nav__header">
+      <h4 class="navbar-brand">Mars Rover Images</h4>
+
+      <button type="button" class="navbar-toggle navbar-toggle__button collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav sidebar-nav__items">
+        <li>
+          <a class="sidebar-nav__items-link" href="#" routerLink="/curiosity">Curiosity Rover</a>
+        </li>
+        <li>
+          <a class="sidebar-nav__items-link" href="#" routerLink="/opportunity">Opportunity Rover</a>
+        </li>
+        <li>
+          <a class="sidebar-nav__items-link" href="#" routerLink="/spirit">Spirit Rover</a>
+        </li>
+      </ul>
+
+      <div class="filters-container">
+        <div class="filter-header">
+          <h4>Filters</h4>
+        </div>
+        
+        <filters></filters>
+      </div>
+    </div>
+  </div>
+</nav>

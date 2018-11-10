@@ -1,0 +1,17 @@
+<div class="content-container">
+	<h2>{{this.roverName}} Rover</h2>
+
+	<div *ngIf="this.photoCollection.length > 0; else elseBlock">
+		<div class="content-item" *ngFor="let photo of this.photoCollection">
+			<img class="content-item__image" src="{{photo.img_src}}" />
+
+			<div class="content-item__date">
+				{{photo.earth_date}}
+			</div>
+		</div>
+	</div>
+
+	<ng-template #elseBlock>
+		<span>Sorry, no images were found for {{this.roverService.earthDate}}! Try filtering by another date.</span>
+	</ng-template>
+</div>

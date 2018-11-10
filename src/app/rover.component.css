@@ -1,0 +1,21 @@
+.content-container {
+	padding: 1em;
+}
+
+.content-item {
+	width: 50%;
+	height: auto;
+	margin: 0 auto;
+	margin-bottom: 2em;
+}
+
+.content-item__image {
+	width: 100%;
+}
+
+.content-item__date {
+	background: #000000;
+	color: #ffffff;
+	text-align: right;
+	padding: 1em;
+}
